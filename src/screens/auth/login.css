@@ -1,0 +1,35 @@
+.content {
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+.welcomeContainer {
+    text-align: center;
+    margin-top: 250px;
+}
+.subText {
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+}
+.imageContainer {
+    background-color: rgb(255, 255, 255);
+    margin-top: 250px;
+}
+.input {
+    width: 5px;
+    height: 35px;
+    margin-left: 250px;
+}
+.forgotPass {
+    cursor: pointer;
+    margin-top: 5px;
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+}
+.forgotPass:hover {
+    font-weight: bold;
+}
