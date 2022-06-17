@@ -33,3 +33,12 @@
 .forgotPass:hover {
     font-weight: bold;
 }
+.imageContainer {
+    display: flex;
+    min-height: 35vh;
+    background-color: #f7f6fd;
+}
+.img {
+    width: 100vh;
+    height: 50vh;
+}

@@ -2,6 +2,8 @@ import React from 'react'
 import './login.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Input, Button } from 'reactstrap'
+import GoogleButton from 'react-google-button'
+import back from '../../img/back.jpg'
 
 export default function Login() {
   return (
@@ -16,13 +18,13 @@ export default function Login() {
               <div>
                 <Input
                   name="username"
-                  style={{ width: 320, height: 35, marginLeft: 250 }}
+                  style={{ width: 320, height: 35, marginLeft: 350 }}
                   placeholder="Kullanıcı Adı"
                 />
 
                 <Input
                   name="username"
-                  style={{ marginTop: 15, width: 320, height: 35, marginLeft: 250 }}
+                  style={{ marginTop: 15, width: 320, height: 35, marginLeft: 350 }}
                   placeholder="Şifre"
                 />
 
@@ -31,16 +33,14 @@ export default function Login() {
                 <div style={{ alignItems: 'center' }} className="d-flex flex-column">
                   <Button
                     style={{ width: 320, marginBottom: 15 }}
-                    color="primary"
+                    color="success"
                     outline
                   >Giriş Yap</Button>
 
-                  <Button
-                    style={{ width: 320 }}
-                    color="danger"
-                    outline
-                  >Kayıt Ol</Button>
-
+                  <GoogleButton
+                    style={{ width: 320, height: 50, }}
+                    label='Google ile giriş yap'
+                  />
                 </div>
               </div>
             </div>
@@ -48,7 +48,7 @@ export default function Login() {
 
           <Col lg={6} md={6} xs={12}>
             <div className='imageContainer'>
-              Buraya background resim gelecek
+              <img className='img' src={back}  />
             </div>
           </Col>
         </Row>
