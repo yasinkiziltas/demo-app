@@ -1,0 +1,4 @@
+-Login pageden registera yönlendirme yap
+-Giriş işlemlerini hallet
+-Girdikten sonra anasayfa sol tarafta burger menü yap
+-Sol taraftaki menüler kullanıcı CRUD, ürün CRUD yap
