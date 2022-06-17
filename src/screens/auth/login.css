@@ -28,10 +28,6 @@
     font-size: 14px;
 }
 
-.forgotPass:hover {
-    font-weight: bold;
-}
-
 .imageContainer {
     display: flex;
     justify-content: center;

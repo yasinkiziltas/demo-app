@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import { Input, Button } from 'reactstrap'
 import GoogleButton from 'react-google-button'
 import back from '../../img/back.png'
+import { Link } from 'react-router'
 
 export default function Login() {
   return (
@@ -12,7 +13,7 @@ export default function Login() {
         <Row>
           <Col lg={6} md={6} xs={12}>
             <div className='welcomeContainer'>
-              <h2>CORL CORP.</h2>
+              <h2>CORL COMPANY</h2>
               <p className='subText'>Tekrar Hoşgeldiniz! Lütfen giriş bilgileriniz giriniz.</p>
 
               <div style={{ justifyContent: 'center', alignItems: 'center', display: 'grid' }}>
@@ -25,22 +26,27 @@ export default function Login() {
                 <Input
                   name="username"
                   placeholder="Şifre"
+                  type='password'
                 />
 
                 <p className='forgotPass'>Şifrenizi mi unuttunuz?</p>
 
-                <div style={{ alignItems: 'center' }} className="d-flex flex-column">
-                  <Button
-                    style={{ width: 320, marginBottom: 15 }}
-                    color="success"
-                    outline
-                  >Giriş Yap</Button>
+                <Button
+                  style={{ width: 320, marginBottom: 15 }}
+                  color="success"
+                  outline
+                >Giriş Yap</Button>
 
-                  <GoogleButton
-                    style={{ width: 320, height: 50, }}
-                    label='Google ile giriş yap'
-                  />
-                </div>
+                <Button
+                  style={{ width: 320, marginBottom: 15 }}
+                  color="primary"
+                  outline
+                >Kayıt Ol</Button>
+
+                <GoogleButton
+                  style={{ width: 320, height: 50, }}
+                  label='Google ile giriş yap'
+                />
               </div>
             </div>
           </Col>
