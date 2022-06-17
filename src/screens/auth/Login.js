@@ -3,7 +3,7 @@ import './login.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Input, Button } from 'reactstrap'
 import GoogleButton from 'react-google-button'
-import back from '../../img/back.jpg'
+import back from '../../img/back.png'
 
 export default function Login() {
   return (
@@ -12,7 +12,7 @@ export default function Login() {
         <Row>
           <Col lg={6} md={6} xs={12}>
             <div className='welcomeContainer'>
-              <h2>Tekrar Hoşgeldiniz!</h2>
+              <h2>CORL CORP.</h2>
               <p className='subText'>Tekrar Hoşgeldiniz! Lütfen giriş bilgileriniz giriniz.</p>
 
               <div>
@@ -46,9 +46,9 @@ export default function Login() {
             </div>
           </Col>
 
-          <Col lg={6} md={6} xs={12}>
-            <div className='imageContainer'>
-              <img className='img' src={back}  />
+          <Col lg={6} md={6} xs={12} className='imageContainer'>
+            <div>
+              <img className='img' src={back} />
             </div>
           </Col>
         </Row>
