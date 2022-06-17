@@ -4,9 +4,11 @@ import { Container, Row, Col } from 'react-bootstrap'
 import { Input, Button } from 'reactstrap'
 import GoogleButton from 'react-google-button'
 import back from '../../img/back.png'
-import { Link } from 'react-router'
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  // let navigate = useNavigate();
+
   return (
     <div className='content'>
       <Container fluid>
@@ -35,6 +37,7 @@ export default function Login() {
                   style={{ width: 320, marginBottom: 15 }}
                   color="success"
                   outline
+                // onClick={() => navigate("/Register")}
                 >Giriş Yap</Button>
 
                 <Button
