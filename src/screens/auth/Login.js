@@ -15,16 +15,15 @@ export default function Login() {
               <h2>CORL CORP.</h2>
               <p className='subText'>Tekrar Hoşgeldiniz! Lütfen giriş bilgileriniz giriniz.</p>
 
-              <div>
+              <div style={{ justifyContent: 'center', alignItems: 'center', display: 'grid' }}>
                 <Input
                   name="username"
-                  style={{ width: 320, height: 35, marginLeft: 350 }}
+                  style={{ marginBottom: 15 }}
                   placeholder="Kullanıcı Adı"
                 />
 
                 <Input
                   name="username"
-                  style={{ marginTop: 15, width: 320, height: 35, marginLeft: 350 }}
                   placeholder="Şifre"
                 />
 
