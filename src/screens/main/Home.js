@@ -1,9 +1,10 @@
 import React from 'react'
+import SideBar from '../../components/SideBar'
 
 export default function Home() {
     return (
         <div>
-            <p>This is home page</p>
+            <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
         </div>
     )
 }
