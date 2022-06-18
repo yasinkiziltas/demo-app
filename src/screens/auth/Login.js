@@ -52,11 +52,9 @@ export default function Login() {
                   onChange={(pass) => setPassword(pass.target.value)}
                 />
 
-                <p className='forgotPass'>Şifrenizi mi unuttunuz?</p>
-
                 <Link to='/home'>
                   <Button
-                    style={{ width: 320, marginBottom: 15 }}
+                    style={{ width: 320, marginBottom: 15, marginTop: 15 }}
                     color="success"
                     outline
                   // onClick={() => handleLogin()}
@@ -75,6 +73,9 @@ export default function Login() {
                   style={{ width: 320, height: 50, }}
                   label='Google ile giriş yap'
                 />
+
+                <p className='forgotPass'>Şifrenizi mi unuttunuz?</p>
+
               </div>
             </div>
           </Col>
