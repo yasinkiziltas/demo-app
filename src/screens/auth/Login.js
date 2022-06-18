@@ -1,14 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './login.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Input, Button } from 'reactstrap'
 import GoogleButton from 'react-google-button'
 import back from '../../img/back.png'
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export default function Login() {
+  const [userName, setUserName] = useState('')
+  const [password, setPassword] = useState('')
+
+  const handleLogin = () => {
+    if (userName == 'yasin' && password == '3131') {
+      <Link to='/home'></Link>
+    }
+    else {
+      alert('Hatalı giriş!')
+    }
+  }
+
   return (
     <div className='content'>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Corl | Giriş </title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
+
       <Container fluid>
         <Row>
           <Col lg={6} md={6} xs={12}>
@@ -18,24 +37,29 @@ export default function Login() {
 
               <div style={{ justifyContent: 'center', alignItems: 'center', display: 'grid' }}>
                 <Input
+                  value={userName}
                   name="username"
                   style={{ marginBottom: 15 }}
                   placeholder="Kullanıcı Adı"
+                  onChange={(name) => setUserName(name.target.value)}
                 />
 
                 <Input
+                  value={password}
                   name="username"
                   placeholder="Şifre"
                   type='password'
+                  onChange={(pass) => setPassword(pass.target.value)}
                 />
 
                 <p className='forgotPass'>Şifrenizi mi unuttunuz?</p>
 
-                <Link to="/home">
+                <Link to='/home'>
                   <Button
                     style={{ width: 320, marginBottom: 15 }}
                     color="success"
                     outline
+                  // onClick={() => handleLogin()}
                   >Giriş Yap</Button>
                 </Link>
 

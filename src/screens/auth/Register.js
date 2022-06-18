@@ -3,18 +3,23 @@ import './login.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Input, Button } from 'reactstrap'
 import { Link } from "react-router-dom";
-
 import backregister from '../../img/back-register.png'
+import { Helmet } from "react-helmet";
 
 export default function Register() {
   return (
     <div className='content'>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Corl | Kayıt Ol </title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <Container fluid>
         <Row>
           <Col lg={6} md={6} xs={12}>
             <div className='welcomeContainer'>
               <h2>KAYIT OL</h2>
-              <p className='subText'>Merhaba! Lütfen kayıt olunuz.</p>
+              <p className='subText'>Merhaba! Lütfen aşağıdaki bilgileri doldurunuz.</p>
 
               <div style={{ justifyContent: 'center', alignItems: 'center', display: 'grid' }}>
                 <Input
@@ -29,11 +34,9 @@ export default function Register() {
                   type='password'
                 />
 
-                <p className='forgotPass'>Şifrenizi mi unuttunuz?</p>
-
                 <Link to="/home">
                   <Button
-                    style={{ width: 320, marginBottom: 15 }}
+                    style={{ width: 320, marginBottom: 15, marginTop: 25 }}
                     color="success"
                     outline
                   >Kayıt Ol</Button>
